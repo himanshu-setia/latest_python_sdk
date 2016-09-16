@@ -1,0 +1,378 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module iam</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>iam</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/python_sdk/iam.py">/python_sdk/iam.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="base64.html">base64</a><br>
+<a href="exceptions.html">exceptions</a><br>
+<a href="hashlib.html">hashlib</a><br>
+<a href="hmac.html">hmac</a><br>
+</td><td width="25%" valign=top><a href="json.html">json</a><br>
+<a href="os.html">os</a><br>
+<a href="pprint.html">pprint</a><br>
+<a href="requests.html">requests</a><br>
+</td><td width="25%" valign=top><a href="six.html">six</a><br>
+<a href="sys.html">sys</a><br>
+<a href="time.html">time</a><br>
+<a href="urllib.html">urllib</a><br>
+</td><td width="25%" valign=top><a href="six.moves.urllib.html">six.moves.urllib</a><br>
+<a href="xmltodict.html">xmltodict</a><br>
+<a href="yaml.html">yaml</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-assign_user_to_group"><strong>assign_user_to_group</strong></a>(user_name, group_name)</dt><dd><tt>Assign&nbsp;a&nbsp;user&nbsp;to&nbsp;a&nbsp;group&nbsp;in&nbsp;your&nbsp;JCS&nbsp;account.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;user_name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;user&nbsp;to&nbsp;be&nbsp;assigned&nbsp;to&nbsp;the&nbsp;group.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;group_name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;group,&nbsp;the&nbsp;user&nbsp;should&nbsp;be&nbsp;assigned&nbsp;to.</tt></dd></dl>
+ <dl><dt><a name="-attach_policy_to_group"><strong>attach_policy_to_group</strong></a>(policy_name, group_name)</dt><dd><tt>Attaches&nbsp;a&nbsp;specified&nbsp;user&nbsp;based&nbsp;policy&nbsp;to&nbsp;a&nbsp;specified&nbsp;JCS&nbsp;IAM&nbsp;group.&nbsp;You&nbsp;must&nbsp;have&nbsp;the&nbsp;AttachPolicyToGroup&nbsp;permissions&nbsp;to&nbsp;run&nbsp;this&nbsp;request<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;policy_name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;policy&nbsp;name&nbsp;of&nbsp;the&nbsp;user&nbsp;based&nbsp;policy&nbsp;to&nbsp;be&nbsp;attached.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;group_name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;Group&nbsp;Name&nbsp;of&nbsp;the&nbsp;group&nbsp;to&nbsp;which&nbsp;policy&nbsp;needs&nbsp;to&nbsp;be&nbsp;attached.</tt></dd></dl>
+ <dl><dt><a name="-attach_policy_to_resource"><strong>attach_policy_to_resource</strong></a>(resource, policy_name)</dt><dd><tt>Attaches&nbsp;a&nbsp;resource&nbsp;based&nbsp;policy&nbsp;to&nbsp;a&nbsp;list&nbsp;of&nbsp;resources.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;resource(resource&nbsp;json)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;resource&nbsp;jrns&nbsp;to&nbsp;be&nbsp;attached&nbsp;to&nbsp;the&nbsp;policy.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;policy_name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;policy&nbsp;name&nbsp;of&nbsp;the&nbsp;resource&nbsp;based&nbsp;policy&nbsp;to&nbsp;be&nbsp;attached.</tt></dd></dl>
+ <dl><dt><a name="-attach_policy_to_user"><strong>attach_policy_to_user</strong></a>(policy_name, user_name)</dt><dd><tt>Attaches&nbsp;a&nbsp;specified&nbsp;user&nbsp;based&nbsp;policy&nbsp;to&nbsp;a&nbsp;specified&nbsp;user.&nbsp;You&nbsp;must&nbsp;have&nbsp;the&nbsp;AttachPolicyToUser&nbsp;permissions&nbsp;to&nbsp;run&nbsp;this&nbsp;request.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;policy_name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;policy&nbsp;name&nbsp;of&nbsp;the&nbsp;user&nbsp;based&nbsp;policy&nbsp;to&nbsp;be&nbsp;attached.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;user_name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;User&nbsp;Name&nbsp;of&nbsp;the&nbsp;user&nbsp;from&nbsp;whom&nbsp;policy&nbsp;needs&nbsp;to&nbsp;be&nbsp;attached.</tt></dd></dl>
+ <dl><dt><a name="-check_user_in_group"><strong>check_user_in_group</strong></a>(user_name, group_name)</dt><dd><tt>Check&nbsp;if&nbsp;the&nbsp;user&nbsp;belongs&nbsp;to&nbsp;a&nbsp;group&nbsp;in&nbsp;your&nbsp;JCS&nbsp;account.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;user_name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;user&nbsp;to&nbsp;be&nbsp;checked&nbsp;in&nbsp;the&nbsp;group.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;group_name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;group,&nbsp;the&nbsp;user&nbsp;should&nbsp;be&nbsp;checked&nbsp;to.</tt></dd></dl>
+ <dl><dt><a name="-create_credential"><strong>create_credential</strong></a>(user_name)</dt><dd><tt>Creates&nbsp;Access&nbsp;Key/Secret&nbsp;Key&nbsp;pair&nbsp;for&nbsp;a&nbsp;new&nbsp;user.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;user_name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;user&nbsp;to&nbsp;create&nbsp;credential&nbsp;for.</tt></dd></dl>
+ <dl><dt><a name="-create_group"><strong>create_group</strong></a>(name, description<font color="#909090">=None</font>)</dt><dd><tt>Creates&nbsp;a&nbsp;new&nbsp;group&nbsp;for&nbsp;your&nbsp;JCS&nbsp;account.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;group&nbsp;to&nbsp;create.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;description&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;description&nbsp;for&nbsp;the&nbsp;group.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;parameter&nbsp;is&nbsp;optional.</tt></dd></dl>
+ <dl><dt><a name="-create_policy"><strong>create_policy</strong></a>(policy_document)</dt><dd><tt>Creates&nbsp;a&nbsp;new&nbsp;policy&nbsp;for&nbsp;your&nbsp;JCS&nbsp;account.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;policy_document&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;policy&nbsp;document&nbsp;for&nbsp;the&nbsp;policy</tt></dd></dl>
+ <dl><dt><a name="-create_resource_based_policy"><strong>create_resource_based_policy</strong></a>(policy_document)</dt><dd><tt>Creates&nbsp;a&nbsp;resource&nbsp;based&nbsp;policy&nbsp;in&nbsp;your&nbsp;JCS&nbsp;account.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;policy-document&nbsp;(Policy&nbsp;Json)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;Url&nbsp;Encoded&nbsp;Policy&nbsp;Document&nbsp;&nbsp;for&nbsp;a&nbsp;resource&nbsp;based&nbsp;policy.</tt></dd></dl>
+ <dl><dt><a name="-create_user"><strong>create_user</strong></a>(name, password<font color="#909090">=None</font>, email<font color="#909090">=None</font>)</dt><dd><tt>Creates&nbsp;a&nbsp;new&nbsp;user&nbsp;for&nbsp;your&nbsp;JCS&nbsp;account.<br>
+&nbsp;<br>
+Parameters:&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;user&nbsp;to&nbsp;create.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;password&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Assign&nbsp;a&nbsp;password&nbsp;to&nbsp;the&nbsp;user.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;parameter&nbsp;is&nbsp;optional.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;email&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;email&nbsp;id&nbsp;of&nbsp;the&nbsp;user.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;paramater&nbsp;is&nbsp;optional.</tt></dd></dl>
+ <dl><dt><a name="-create_virtual_mfa_device"><strong>create_virtual_mfa_device</strong></a>(name)</dt><dd><tt>Creates&nbsp;a&nbsp;virtual&nbsp;mfa&nbsp;device&nbsp;in&nbsp;the&nbsp;caller's&nbsp;account.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;virtual&nbsp;mfa&nbsp;device.</tt></dd></dl>
+ <dl><dt><a name="-deactivate_mfa_device"><strong>deactivate_mfa_device</strong></a>(device_name, user_name<font color="#909090">=None</font>)</dt><dd><tt>Deactivates&nbsp;an&nbsp;mfa&nbsp;device&nbsp;attached&nbsp;to&nbsp;a&nbsp;user.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;device_name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Name&nbsp;of&nbsp;the&nbsp;device&nbsp;to&nbsp;be&nbsp;deactivated.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;user_name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Name&nbsp;of&nbsp;the&nbsp;user&nbsp;whose&nbsp;device&nbsp;is&nbsp;to&nbsp;be&nbsp;deactivated.</tt></dd></dl>
+ <dl><dt><a name="-delete_credential"><strong>delete_credential</strong></a>(access_key<font color="#909090">=None</font>, id<font color="#909090">=None</font>)</dt><dd><tt>Deletes&nbsp;Access&nbsp;Key/Secret&nbsp;Key&nbsp;pair&nbsp;for&nbsp;a&nbsp;user.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;access-key&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;access-key&nbsp;corresponding&nbsp;to&nbsp;the&nbsp;crednetial&nbsp;to&nbsp;be&nbsp;deleted.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;id&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;id&nbsp;of&nbsp;the&nbsp;credential&nbsp;to&nbsp;be&nbsp;deleted.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;parameter&nbsp;is&nbsp;optional.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Either&nbsp;of&nbsp;access-key&nbsp;or&nbsp;id&nbsp;is&nbsp;required.</tt></dd></dl>
+ <dl><dt><a name="-delete_group"><strong>delete_group</strong></a>(name)</dt><dd><tt>Deletes&nbsp;the&nbsp;group&nbsp;in&nbsp;your&nbsp;JCS&nbsp;account.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;group&nbsp;to&nbsp;delete.</tt></dd></dl>
+ <dl><dt><a name="-delete_policy"><strong>delete_policy</strong></a>(name)</dt><dd><tt>Deletes&nbsp;a&nbsp;policy&nbsp;for&nbsp;your&nbsp;JCS&nbsp;account.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;policy.</tt></dd></dl>
+ <dl><dt><a name="-delete_resource_based_policy"><strong>delete_resource_based_policy</strong></a>(name)</dt><dd><tt>Deletes&nbsp;the&nbsp;resource&nbsp;based&nbsp;policy&nbsp;in&nbsp;your&nbsp;JCS&nbsp;account.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;policy&nbsp;which&nbsp;is&nbsp;to&nbsp;be&nbsp;deleted.</tt></dd></dl>
+ <dl><dt><a name="-delete_user"><strong>delete_user</strong></a>(name)</dt><dd><tt>Deletes&nbsp;a&nbsp;specified&nbsp;user.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;user&nbsp;to&nbsp;delete.</tt></dd></dl>
+ <dl><dt><a name="-delete_virtual_mfa_device"><strong>delete_virtual_mfa_device</strong></a>(name)</dt><dd><tt>Delete&nbsp;a&nbsp;virtual&nbsp;mfa&nbsp;device.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Name&nbsp;of&nbsp;the&nbsp;mfa&nbsp;device&nbsp;to&nbsp;be&nbsp;deleted.</tt></dd></dl>
+ <dl><dt><a name="-detach_policy_from_group"><strong>detach_policy_from_group</strong></a>(policy_name, group_name)</dt><dd><tt>Detaches&nbsp;a&nbsp;specified&nbsp;user&nbsp;based&nbsp;policy&nbsp;from&nbsp;a&nbsp;specified&nbsp;group.&nbsp;You&nbsp;must&nbsp;have&nbsp;the&nbsp;DetachPolicyFromGroup&nbsp;permissions&nbsp;to&nbsp;run&nbsp;this&nbsp;request.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;policy_name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;policy&nbsp;name&nbsp;of&nbsp;the&nbsp;user&nbsp;based&nbsp;policy&nbsp;to&nbsp;be&nbsp;detached.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;group_name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;group&nbsp;Name&nbsp;of&nbsp;the&nbsp;group&nbsp;from&nbsp;which&nbsp;policy&nbsp;needs&nbsp;to&nbsp;be&nbsp;detached.</tt></dd></dl>
+ <dl><dt><a name="-detach_policy_from_resource"><strong>detach_policy_from_resource</strong></a>(resource, policy_name)</dt><dd><tt>Detaches&nbsp;a&nbsp;resource&nbsp;based&nbsp;policy&nbsp;from&nbsp;a&nbsp;list&nbsp;of&nbsp;resources.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;resource(resource&nbsp;json)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;resource&nbsp;jrns&nbsp;to&nbsp;be&nbsp;detached&nbsp;from&nbsp;the&nbsp;policy.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;policy_name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;policy&nbsp;name&nbsp;of&nbsp;the&nbsp;resource&nbsp;based&nbsp;policy&nbsp;to&nbsp;be&nbsp;detached.</tt></dd></dl>
+ <dl><dt><a name="-detach_policy_from_user"><strong>detach_policy_from_user</strong></a>(policy_name, user_name)</dt><dd><tt>Detaches&nbsp;a&nbsp;specified&nbsp;user&nbsp;based&nbsp;policy&nbsp;from&nbsp;a&nbsp;specified&nbsp;user.&nbsp;You&nbsp;must&nbsp;have&nbsp;the&nbsp;DetachPolicyFromUser&nbsp;permissions&nbsp;to&nbsp;run&nbsp;this&nbsp;request.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;policy_name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;policy&nbsp;name&nbsp;of&nbsp;the&nbsp;user&nbsp;based&nbsp;policy&nbsp;to&nbsp;be&nbsp;detached.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;user_name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;User&nbsp;Name&nbsp;of&nbsp;the&nbsp;user&nbsp;from&nbsp;whom&nbsp;policy&nbsp;needs&nbsp;to&nbsp;be&nbsp;detached.</tt></dd></dl>
+ <dl><dt><a name="-enable_mfa_device"><strong>enable_mfa_device</strong></a>(user_name, device_name, code1, code2)</dt><dd><tt>Attaches&nbsp;an&nbsp;mfa&nbsp;device&nbsp;to&nbsp;a&nbsp;user.&nbsp;There&nbsp;can&nbsp;be&nbsp;at&nbsp;most&nbsp;one&nbsp;mfa&nbsp;device&nbsp;attached&nbsp;to&nbsp;a&nbsp;user.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;user_name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;User&nbsp;which&nbsp;needs&nbsp;to&nbsp;be&nbsp;mfa&nbsp;enabled.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;device_name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Name&nbsp;of&nbsp;the&nbsp;device&nbsp;to&nbsp;be&nbsp;attached&nbsp;to&nbsp;the&nbsp;user.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;code1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;OTP&nbsp;code,&nbsp;last&nbsp;but&nbsp;one.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;code2<br>
+&nbsp;&nbsp;&nbsp;&nbsp;OTP&nbsp;code&nbsp;now.</tt></dd></dl>
+ <dl><dt><a name="-get_group"><strong>get_group</strong></a>(name)</dt><dd><tt>Retrieves&nbsp;information&nbsp;for&nbsp;a&nbsp;specified&nbsp;group&nbsp;for&nbsp;your&nbsp;JCS&nbsp;account.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;group&nbsp;to&nbsp;retrieve&nbsp;information&nbsp;for.</tt></dd></dl>
+ <dl><dt><a name="-get_group_summary"><strong>get_group_summary</strong></a>(name)</dt><dd><tt>Returns&nbsp;the&nbsp;summary&nbsp;of&nbsp;the&nbsp;specified&nbsp;group.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Name&nbsp;of&nbsp;the&nbsp;group&nbsp;for&nbsp;which&nbsp;summary&nbsp;needs&nbsp;to&nbsp;be&nbsp;returned.</tt></dd></dl>
+ <dl><dt><a name="-get_policy"><strong>get_policy</strong></a>(name)</dt><dd><tt>Get&nbsp;a&nbsp;policy&nbsp;for&nbsp;your&nbsp;JCS&nbsp;account.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;policy.</tt></dd></dl>
+ <dl><dt><a name="-get_policy_summary"><strong>get_policy_summary</strong></a>(name)</dt><dd><tt>Retrieves&nbsp;summary&nbsp;information&nbsp;about&nbsp;a&nbsp;specified&nbsp;policy&nbsp;including&nbsp;the&nbsp;attached&nbsp;_entities,&nbsp;about&nbsp;a&nbsp;specified&nbsp;JCS&nbsp;IAM&nbsp;user&nbsp;based&nbsp;policy.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;policy&nbsp;whose&nbsp;summary&nbsp;to&nbsp;be&nbsp;fetched.</tt></dd></dl>
+ <dl><dt><a name="-get_resource_based_policy"><strong>get_resource_based_policy</strong></a>(name)</dt><dd><tt>Retreives&nbsp;details&nbsp;about&nbsp;a&nbsp;specific&nbsp;resource&nbsp;based&nbsp;policy&nbsp;in&nbsp;your&nbsp;JCS&nbsp;account.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;policy&nbsp;whose&nbsp;information&nbsp;is&nbsp;to&nbsp;be&nbsp;fetched.</tt></dd></dl>
+ <dl><dt><a name="-get_resource_based_policy_summary"><strong>get_resource_based_policy_summary</strong></a>(name)</dt><dd><tt>Retrieves&nbsp;summary&nbsp;information&nbsp;about&nbsp;a&nbsp;specified&nbsp;resource&nbsp;based&nbsp;policy&nbsp;including&nbsp;the&nbsp;attached&nbsp;resources.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;resource&nbsp;based&nbsp;policy&nbsp;whose&nbsp;summary&nbsp;is&nbsp;to&nbsp;be&nbsp;fetched.</tt></dd></dl>
+ <dl><dt><a name="-get_user"><strong>get_user</strong></a>(name)</dt><dd><tt>Retrieves&nbsp;information&nbsp;for&nbsp;a&nbsp;specified&nbsp;user&nbsp;in&nbsp;your&nbsp;JCS&nbsp;account.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;user&nbsp;to&nbsp;retrieve&nbsp;information&nbsp;for.</tt></dd></dl>
+ <dl><dt><a name="-get_user_credential"><strong>get_user_credential</strong></a>(user_name)</dt><dd><tt>Retrieves&nbsp;access&nbsp;keys&nbsp;for&nbsp;a&nbsp;user.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;user_name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;user&nbsp;to&nbsp;retrieve&nbsp;credentials&nbsp;for.</tt></dd></dl>
+ <dl><dt><a name="-get_user_summary"><strong>get_user_summary</strong></a>(name)</dt><dd><tt>Returns&nbsp;the&nbsp;summary&nbsp;of&nbsp;the&nbsp;specified&nbsp;user.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Name&nbsp;of&nbsp;the&nbsp;user&nbsp;for&nbsp;which&nbsp;summary&nbsp;needs&nbsp;to&nbsp;be&nbsp;returned.</tt></dd></dl>
+ <dl><dt><a name="-list_groups"><strong>list_groups</strong></a>()</dt><dd><tt>List&nbsp;the&nbsp;details&nbsp;of&nbsp;all&nbsp;the&nbsp;group&nbsp;in&nbsp;your&nbsp;JCS&nbsp;account.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;No&nbsp;parameters.</tt></dd></dl>
+ <dl><dt><a name="-list_groups_for_user"><strong>list_groups_for_user</strong></a>(name)</dt><dd><tt>List&nbsp;groups&nbsp;for&nbsp;the&nbsp;user.&nbsp;You&nbsp;must&nbsp;have&nbsp;the&nbsp;permission&nbsp;ListGroupsForUser&nbsp;permssion&nbsp;to&nbsp;run&nbsp;this&nbsp;request.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;user&nbsp;for&nbsp;which&nbsp;groups&nbsp;needs&nbsp;to&nbsp;be&nbsp;listed</tt></dd></dl>
+ <dl><dt><a name="-list_policies"><strong>list_policies</strong></a>()</dt><dd><tt>Lists&nbsp;all&nbsp;policies&nbsp;for&nbsp;your&nbsp;JCS&nbsp;account.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;No&nbsp;parameters.</tt></dd></dl>
+ <dl><dt><a name="-list_resource_based_policies"><strong>list_resource_based_policies</strong></a>()</dt><dd><tt>List&nbsp;the&nbsp;details&nbsp;of&nbsp;all&nbsp;the&nbsp;resource&nbsp;based&nbsp;policies&nbsp;in&nbsp;your&nbsp;JCS&nbsp;account.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;No&nbsp;parameters</tt></dd></dl>
+ <dl><dt><a name="-list_user_in_group"><strong>list_user_in_group</strong></a>(name)</dt><dd><tt>Lists&nbsp;users&nbsp;attached&nbsp;to&nbsp;a&nbsp;group<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;group&nbsp;for&nbsp;which&nbsp;users&nbsp;needs&nbsp;to&nbsp;be&nbsp;listed</tt></dd></dl>
+ <dl><dt><a name="-list_users"><strong>list_users</strong></a>()</dt><dd><tt>List&nbsp;the&nbsp;details&nbsp;of&nbsp;all&nbsp;the&nbsp;users&nbsp;in&nbsp;your&nbsp;JCS&nbsp;account.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;No&nbsp;parameters.</tt></dd></dl>
+ <dl><dt><a name="-list_virtual_mfa_devices"><strong>list_virtual_mfa_devices</strong></a>(assign_status)</dt><dd><tt>Lists&nbsp;all&nbsp;virtual&nbsp;mfa&nbsp;devices&nbsp;in&nbsp;an&nbsp;account&nbsp;based&nbsp;on&nbsp;assign_status<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;assign_status</tt></dd></dl>
+ <dl><dt><a name="-remove_user_from_group"><strong>remove_user_from_group</strong></a>(user_name, group_name)</dt><dd><tt>Remove&nbsp;the&nbsp;user&nbsp;from&nbsp;a&nbsp;group&nbsp;in&nbsp;your&nbsp;JCS&nbsp;account.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;user-name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;user&nbsp;to&nbsp;be&nbsp;removed&nbsp;from&nbsp;the&nbsp;group.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;group-name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;group,&nbsp;the&nbsp;user&nbsp;should&nbsp;be&nbsp;removed&nbsp;from.</tt></dd></dl>
+ <dl><dt><a name="-resync_mfa_device"><strong>resync_mfa_device</strong></a>(device_name, code1, code2, user_name<font color="#909090">=None</font>)</dt><dd><tt>Resyncs&nbsp;an&nbsp;MFA&nbsp;device&nbsp;which&nbsp;got&nbsp;disabled&nbsp;due&nbsp;to&nbsp;three&nbsp;wrong&nbsp;otp&nbsp;attempts.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;device_name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Name&nbsp;of&nbsp;the&nbsp;device&nbsp;that&nbsp;requires&nbsp;a&nbsp;resync.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;code1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;OTP&nbsp;code,&nbsp;last&nbsp;but&nbsp;one.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;code2<br>
+&nbsp;&nbsp;&nbsp;&nbsp;OTP&nbsp;code&nbsp;now.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;user_name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Name&nbsp;of&nbsp;the&nbsp;user&nbsp;whose&nbsp;device&nbsp;needs&nbsp;resync.</tt></dd></dl>
+ <dl><dt><a name="-update_group"><strong>update_group</strong></a>(name, new_description)</dt><dd><tt>Updates&nbsp;the&nbsp;name&nbsp;and&nbsp;description&nbsp;of&nbsp;a&nbsp;group.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;group&nbsp;which&nbsp;needs&nbsp;to&nbsp;be&nbsp;update.&nbsp;Atleast&nbsp;one&nbsp;of&nbsp;--id&nbsp;or&nbsp;--name&nbsp;should&nbsp;be&nbsp;specified.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;new_description(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;New&nbsp;description&nbsp;of&nbsp;the&nbsp;group.</tt></dd></dl>
+ <dl><dt><a name="-update_policy"><strong>update_policy</strong></a>(name, policy_document)</dt><dd><tt>Updates&nbsp;an&nbsp;existing&nbsp;policy&nbsp;for&nbsp;your&nbsp;JCS&nbsp;account.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;policy.</tt></dd></dl>
+ <dl><dt><a name="-update_user"><strong>update_user</strong></a>(name, new_password<font color="#909090">=None</font>, new_email<font color="#909090">=None</font>)</dt><dd><tt>Updates&nbsp;the&nbsp;email_id&nbsp;or&nbsp;password&nbsp;of&nbsp;a&nbsp;user.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;user&nbsp;which&nbsp;needs&nbsp;to&nbsp;be&nbsp;updated.&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;new_email&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;New&nbsp;email&nbsp;of&nbsp;the&nbsp;user<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;new_password&nbsp;(string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;New&nbsp;password&nbsp;of&nbsp;the&nbsp;user.&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Alreast&nbsp;one&nbsp;of&nbsp;new_email&nbsp;or&nbsp;new_password&nbsp;needs&nbsp;to&nbsp;be&nbsp;specified.</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
